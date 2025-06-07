@@ -1,0 +1,90 @@
+/* Default Dark Mode */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1d1d1d, #252525);
+}
+
+/* Typewriter Effect */
+.hero h1 {
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* CTA Button */
+.cta {
+    background-color: #ff8800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.cta:hover {
+    background-color: #ff6600;
+}
+
+/* Toggle Button */
+.toggle-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #ff8800;
+    border: none;
+    cursor: pointer;
+}
+
+/* Smooth Fade-in Effect */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    margin: auto;
+}
+
+.contact input, textarea {
+    padding: 10px;
+    border: 1px solid white;
+    background: #222;
+    color: white;
+}
+
+.contact button {
+    background: #ff8800;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
